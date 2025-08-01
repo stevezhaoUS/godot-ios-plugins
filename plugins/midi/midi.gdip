@@ -1,0 +1,21 @@
+[config]
+name="MidiPlugin"
+binary="midi.release.xcframework"
+
+initialization="godot_plugin_init"
+deinitialization="godot_plugin_deinit"
+
+[dependencies]
+linked=[]
+embedded=[]
+system=["CoreMIDI.framework", "AudioToolbox.framework", "AudioUnit.framework", "CoreAudioTypes.framework"]
+capabilities=[]
+
+files=[]
+
+[plist]
+NSBluetoothAlwaysUsageDescription="MIDI functionality requires Bluetooth access for wireless MIDI devices"
+NSBluetoothPeripheralUsageDescription="MIDI functionality requires Bluetooth access for wireless MIDI devices"
+NSLocalNetworkUsageDescription="MIDI functionality may use local network for network MIDI devices"
+NSMicrophoneUsageDescription="MIDI functionality may require microphone access for audio routing"
+NSAppleMusicUsageDescription="MIDI functionality may require access to music library"
